@@ -25,6 +25,6 @@ class CatalogModel {
         price: 565,
         color: "#33505a",
         image:
-            "https://docs.flutter.dev/assets/images/shared/brand/flutter/logo/flutter-lockup.png")
+            "https://images.pexels.com/photos/5199930/pexels-photo-5199930.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
   ];
 }
