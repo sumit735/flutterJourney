@@ -10,6 +10,7 @@ class ItemWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
+        onTap: () => print('clicked'),
         leading: Image.network(
           item.image,
           width: 70,
