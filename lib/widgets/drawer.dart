@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myfirstapp/utils/routes.dart';
 
 class NewDrawer extends StatelessWidget {
   const NewDrawer({Key? key}) : super(key: key);
@@ -22,12 +23,13 @@ class NewDrawer extends StatelessWidget {
               margin: EdgeInsets.zero,
             ),
           ),
-          const ListTile(
-            leading: Icon(
+          ListTile(
+            onTap: () => Navigator.pushNamed(context, MyRoutes.homeRoute),
+            leading: const Icon(
               Icons.home_outlined,
               color: Colors.white,
             ),
-            title: Text(
+            title: const Text(
               "Home",
               textScaleFactor: 1.2,
               style: TextStyle(
@@ -35,12 +37,13 @@ class NewDrawer extends StatelessWidget {
               ),
             ),
           ),
-          const ListTile(
-            leading: Icon(
+          ListTile(
+            onTap: () => Navigator.pushNamed(context, MyRoutes.loginRoute),
+            leading: const Icon(
               Icons.person_outline,
               color: Colors.white,
             ),
-            title: Text(
+            title: const Text(
               "Profile",
               textScaleFactor: 1.2,
               style: TextStyle(
