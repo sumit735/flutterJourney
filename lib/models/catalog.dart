@@ -92,4 +92,7 @@ class Item {
 
 class CatalogModel {
   static List<Item> items = [];
+
+  // get item by id
+
 }
